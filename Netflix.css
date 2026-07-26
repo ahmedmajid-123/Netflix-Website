@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.main {
+  background-image: url(Netflix-Image/Netflix\ Home.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  position: relative;
+}
+
+.main .box {
+  height: 100%;
+  width: 100%;
+  opacity: 0.68;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+nav img {
+  color: red;
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+/* Hero Section & Email Spacing Fix */
+.hero {
+  font-family: 'Martel Sans', sans-serif;
+  min-height: calc(80vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.hero> :nth-child(1) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.hero> :nth-child(2) {
+  font-weight: 400;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  text-align: center;
+}
+
+.hero> :nth-child(3) {
+  font-weight: 400;
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+  text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.main input {
+  padding: 7px 101px 8px 14px;
+  font-size: 14px;
+  border-radius: 7px;
+  background-color: rgba(23, 23, 23, 0.7);
+  color: white;
+  border: 2px solid rgba(246, 248, 248, 0.5);
+}
+
+.main input:focus {
+  border-color: #ffffff;
+}
+
+.seprate {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 6px 16px;
+  font-weight: 400;
+  background-color: rgba(248, 243, 243, 0.021);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 14px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 80vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+  padding: 50px 0;
+  gap: 20px;
+}
+
+.third {
+  flex-direction: row-reverse;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 30vw;
+  max-width: 450px;
+  position: relative;
+  z-index: 10;
+}
+
+section.first>div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+section.first>div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+  font-size: 24px;
+}
+
+.Frequently h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.Frequently {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.Freq-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 20px auto;
+  font-size: 24px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.Change1:hover {
+  background-color: red;
+}
+
+.Change2:hover {
+  background-color: blue;
+}
+
+.Transation:hover {
+  background-color: #29c4a3;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: #757575;
+  padding: 48px 30px 60px;
+}
+
+.footer-inner {
+  max-width: 60vw;
+  margin: auto;
+}
+
+.footer-question {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.footer-question a {
+  color: #757575;
+  text-decoration: none;
+}
+
+.footer-question a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 24px;
+  margin-bottom: 30px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-lang {
+  background-color: black;
+  color: #757575;
+  border: 1px solid #757575;
+  padding: 8px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.footer-copy {
+  font-size: 13px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+
+  nav,
+  .first,
+  .Freq-box,
+  .footer-inner {
+    max-width: 90vw;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main input {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-red {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .first {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .secImg img {
+    width: 80vw;
+  }
+
+  section.first>div :nth-child(1) {
+    font-size: 28px;
+  }
+
+  section.first>div :nth-child(2) {
+    font-size: 16px;
+  }
+
+  .Frequently h2 {
+    font-size: 32px;
+  }
+
+  .Freq-box {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
