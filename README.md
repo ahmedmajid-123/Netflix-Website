@@ -2,7 +2,6 @@
 # 🎬 Netflix Clone (Landing Page Code with Ahmed)
 
 
-# 🎬 Netflix Landing Page Clone
 
 A responsive landing page clone of Netflix built with **HTML5** and **CSS3**. This project replicates the user interface of Netflix, including modern styling, hover effects, and full responsiveness across different screen sizes (mobile, tablet, and desktop).
 
